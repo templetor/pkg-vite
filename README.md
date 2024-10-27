@@ -1,4 +1,4 @@
-<h1 align='center'>tempt/pkg</h1>
+<h1 align='center'>pkg</h1>
 
 <br>
 
@@ -11,5 +11,5 @@
 ### quick start
 
 ```bash
-npx degit tofu-xx/tempt/pkg new-project
+npx degit templetor/pkg new-project
 ```
