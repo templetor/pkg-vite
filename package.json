@@ -29,6 +29,8 @@
     "main.js"
   ],
   "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
     "release": "bumpp -no-push && nr build && pnpm publish",
     "up": "taze major -I",
     "lint": "eslint .",
@@ -41,9 +43,11 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
     "@antfu/ni": "^0.23.0",
+    "@types/node": "^22.8.7",
     "bumpp": "^9.7.1",
     "eslint": "^9.13.0",
     "eslint-plugin-format": "^0.1.2",
-    "taze": "^0.17.2"
+    "taze": "^0.17.2",
+    "vite": "^5.4.10"
   }
 }
