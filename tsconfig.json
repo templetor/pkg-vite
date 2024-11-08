@@ -11,10 +11,7 @@
     "allowJs": true,
     "strict": true,
     "strictNullChecks": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "emitDeclarationOnly": true,
-    // "noEmit": true,
+    "noEmit": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true

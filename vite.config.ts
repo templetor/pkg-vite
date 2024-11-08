@@ -1,7 +1,9 @@
 import path from 'node:path'
 import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
+  plugins: [dts()],
   resolve: {
     alias: [
       {
@@ -14,7 +16,7 @@ export default defineConfig({
     lib: {
       entry: './src/main.ts',
       name: 'ph_reponame',
-      formats: ['es', 'umd'],
+      formats: ['es', 'cjs'],
       fileName: f => `main.${f}.js`,
     },
     target: 'esnext',
