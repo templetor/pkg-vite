@@ -37,8 +37,8 @@
   ],
   "scripts": {
     "start": "esno src/main.ts",
-    "build": "vite build",
-    "watch": "vite build --watch",
+    "build": "vite build && tsc",
+    "watch": "vite build --watch && tsc -w",
     "release": "bumpp -no-push && nr build && pnpm publish",
     "up": "taze major -I",
     "lint": "eslint .",
@@ -57,6 +57,7 @@
     "eslint-plugin-format": "^0.1.2",
     "esno": "^4.8.0",
     "taze": "^0.18.0",
+    "tsc": "^2.0.4",
     "vite": "^5.4.10"
   }
 }
