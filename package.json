@@ -1,18 +1,18 @@
 {
-  "name": "ph-reponame",
+  "name": "ph_reponame",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@9.12.3",
   "description": "",
-  "author": "ph-name <ph-email>",
+  "author": "ph_ghname <ph_email>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/ph-name",
-  "homepage": "https://github.com/ph-name/ph-reponame#readme",
+  "funding": "https://github.com/sponsors/ph_ghname",
+  "homepage": "https://github.com/ph_ghname/ph_reponame#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ph-name/ph-reponame.git"
+    "url": "git+https://github.com/ph_ghname/ph_reponame.git"
   },
-  "bugs": "https://github.com/ph-name/ph-reponame/issues",
+  "bugs": "https://github.com/ph_ghname/ph_reponame/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {

@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: './src/main.ts',
-      name: 'ph-reponame',
+      name: 'ph_reponame',
       formats: ['es', 'umd'],
       fileName: f => `main.${f}.js`,
     },
