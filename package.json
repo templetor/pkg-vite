@@ -14,19 +14,26 @@
   },
   "bugs": "https://github.com/ph_ghname/ph_reponame/issues",
   "keywords": [],
-  "sideEffects": false,
   "exports": {
     ".": {
-      "types": "./main.d.ts",
-      "import": "./main.js",
-      "require": "./main.cjs"
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
     }
   },
-  "main": "main.js",
-  "module": "main.js",
-  "types": "main.d.ts",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
   "files": [
-    "main.js"
+    "dist"
   ],
   "scripts": {
     "start": "esno src/main.ts",
