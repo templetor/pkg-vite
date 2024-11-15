@@ -1,22 +1,19 @@
-import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   plugins: [dts()],
   resolve: {
-    alias: [
-      {
-        find: '@',
-        replacement: path.resolve(__dirname, 'src'),
-      },
-    ],
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
   },
   build: {
     lib: {
       entry: './src/main.ts',
       name: 'ph_reponame',
-      formats: ['es', 'cjs'],
+      formats: ['es', 'umd'],
       fileName: f => `main.${f}.js`,
     },
     target: 'esnext',

@@ -8,5 +8,6 @@ export default antfu({
   markdown: true,
   rules: {
     'format/prettier': 'off',
+    'ts/explicit-function-return-type': 'off',
   },
 })
