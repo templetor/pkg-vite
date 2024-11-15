@@ -18,10 +18,10 @@
     ".": {
       "types": "./dist/main.d.ts",
       "import": "./dist/main.es.js",
-      "require": "./dist/main.cjs.js"
+      "require": "./dist/main.umd.js"
     }
   },
-  "main": "./dist/main.es.js",
+  "main": "./dist/main.umd.js",
   "module": "./dist/main.es.js",
   "types": "./dist/main.d.ts",
   "typesVersions": {
